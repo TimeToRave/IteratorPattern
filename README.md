@@ -12,4 +12,4 @@
 
 ## Диаграмма классов
 
-![Диаграмма классов]()
+![Диаграмма классов](https://raw.githubusercontent.com/TimeToRave/IteratorPattern/main/ClassDiagram.png)
