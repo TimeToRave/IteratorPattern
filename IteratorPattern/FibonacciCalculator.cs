@@ -51,6 +51,12 @@ namespace IteratorPattern
             return order;
         }
 
+        /// <summary>
+        /// Формирует последовательность Фибоначчи
+        /// </summary>
+        /// <param name="initialStep">Начальный шаг, с которого будет строиться последовательность</param>
+        /// <param name="stepsCount">Количество шагов</param>
+        /// <returns>Строку с последовательностью числе Фибоначчи</returns>
         public string GetConsequence(int initialStep, int stepsCount)
         {
             var iterator = GetFibonacciIterator(initialStep, stepsCount);
