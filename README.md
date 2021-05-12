@@ -1,5 +1,7 @@
 # Реализация паттерна "Итератор"
 
+[![Tests](https://github.com/TimeToRave/IteratorPattern/actions/workflows/dotnet.yml/badge.svg)](https://github.com/TimeToRave/IteratorPattern/actions/workflows/dotnet.yml)
+
 ## Цель
 
 Реализовать программу для вычисления последовательности Фибоначчи используя паттерн "Итератор"
