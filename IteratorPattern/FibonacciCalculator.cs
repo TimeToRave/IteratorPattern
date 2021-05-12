@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Text;
 
 namespace IteratorPattern
 {
@@ -48,6 +49,19 @@ namespace IteratorPattern
             }
 
             return order;
+        }
+
+        public string GetConsequence(int initialStep, int stepsCount)
+        {
+            var iterator = GetFibonacciIterator(initialStep, stepsCount);
+
+            StringBuilder fibonacciSequence = new StringBuilder();
+            while (iterator.MoveNext())
+            {
+                fibonacciSequence.AppendLine(iterator.GetCurrent().ToString());
+            }
+
+            return fibonacciSequence.ToString();
         }
     }
 }

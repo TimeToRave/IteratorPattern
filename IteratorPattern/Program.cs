@@ -8,7 +8,7 @@ namespace IteratorPattern
         
         static void Main(string[] args)
         {
-            int stepsCount = -5;
+            int stepsCount = 0;
             int initialStep = 10;
             
             // Получает количество шагов
@@ -20,16 +20,10 @@ namespace IteratorPattern
             string outputFilePath = (args.Length > 2 && args[2].Length > 0) ? args[2] : "output.txt";
             
             var calculator = new FibonacciCalculator();
-            var iterator = calculator.GetFibonacciIterator(initialStep, stepsCount);
-
-            StringBuilder fibonacciSequence = new StringBuilder();
-            while (iterator.MoveNext())
-            {
-                fibonacciSequence.AppendLine(iterator.GetCurrent().ToString());
-            }
+            string result = calculator.GetConsequence(initialStep, stepsCount);
 
             FileOperator fileOperator = new FileOperator();
-            fileOperator.WriteTextToFile(outputFilePath, fibonacciSequence.ToString());
+            fileOperator.WriteTextToFile(outputFilePath, result);
             Console.ReadLine();
         }
     }
