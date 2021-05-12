@@ -28,11 +28,11 @@ namespace IteratorPattern
         /// Метод получения текущего числа последовательности
         /// </summary>
         /// <returns></returns>
-        public int GetCurrent()
+        public ulong GetCurrent()
         {
             double sqrt5 = Math.Sqrt(5);
             double phi = (sqrt5 + 1) / 2;
-            return Convert.ToUInt16(1 / sqrt5 * Math.Pow(phi, Position));
+            return Convert.ToUInt64(1 / sqrt5 * Math.Pow(phi, Position));
         }
     }
 }
