@@ -8,8 +8,8 @@ namespace IteratorPattern
         
         static void Main(string[] args)
         {
-            int stepsCount = 10;
-            int initialStep = 0;
+            int stepsCount = -5;
+            int initialStep = 10;
             
             // Получает количество шагов
             var argumentsIsValid = args.Length > 0  ? int.TryParse(args[0], out stepsCount) : false;

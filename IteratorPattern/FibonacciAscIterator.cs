@@ -25,7 +25,7 @@
         /// будет ли генерироваться следующий элемент</returns>
         public override bool MoveNext()
         {
-            bool isNext = ++ Position < StepCount;
+            bool isNext = ++ Position <= StepCount;
 
             return isNext;
         }

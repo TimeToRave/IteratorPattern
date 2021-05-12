@@ -39,7 +39,7 @@ namespace IteratorPattern
         /// </summary>
         /// <param name="steps">Количество шагов</param>
         /// <returns>Название метода прохода</returns>
-        private string GetIteratorOrder(int steps)
+        public string GetIteratorOrder(int steps)
         {
             string order = "ASC";
             if (steps  < 0)
